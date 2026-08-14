@@ -6,7 +6,7 @@ const mongoURL = 'mongodb://localhost:27017/hotels';
 // Set up MongoDB connection
 mongoose.connect(mongoURL);
 
-// Get the default connection
+// Get the default connections
 const db = mongoose.connection;
 
 db.on('connected', () => {
